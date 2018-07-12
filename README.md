@@ -1,24 +1,21 @@
-# README
+# Welcome to Curriculum Pro!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi! I'm Marvio Rocha, have worked with the full-stack developer and that is my startup writer in ruby -v 2.5.1 and Rails -v 5.2.0  **curriculum.Me**.  Is a project for people ~~not find a job,~~ send resume to find a job.
 
-Things you may want to cover:
+# Future 
 
-* Ruby version
+- Send your for find job
+- Companies
+-  Friends networks
+- Resume Create
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Screenshot
+<img src="public/screenshot.jpg">
+ 
+ # Credits
+- Material Admin
+- Google Material Design Framework
+- Material Design Icons
+- jQuery
+- Gulp
+- Chart.js
