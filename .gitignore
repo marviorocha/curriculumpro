@@ -20,6 +20,9 @@
 # Ignore uploaded files in development
 /storage/*
 
+# AdminTemplete Ignore
+/public/Material-Admin/*
+
 /node_modules
 /yarn-error.log
 
