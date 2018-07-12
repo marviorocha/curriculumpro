@@ -10,7 +10,7 @@ Hi! I'm Marvio Rocha, have worked with the full-stack developer and that is my s
 - Resume Create
 
 # Screenshot
-<img src="public/screenshot.jpg">
+<img src="public/curriculumprome.jpg">
  
  # Credits
 - Material Admin
