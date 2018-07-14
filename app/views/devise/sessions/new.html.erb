@@ -1,0 +1,111 @@
+
+
+<div style="background-color:#f6f6f6" class="d-flex justify-content-center"><%= image_tag('logo.svg', size: '390x110', class: 'mx-auto d-block ') %></div>
+
+
+         
+<div class="body-wrapper">
+   
+    <div class="page-wrapper ">
+      <!-- Logo Curriculum -->
+      
+      <main class="content-wrapper auth-screen ">
+       
+     
+   
+        <div class="mdc-layout-grid">
+                 
+          
+					<div class="mdc-layout-grid__inner">
+          
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3">
+            
+						</div>
+        
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+            
+							<div class="mdc-card">
+              
+								<section class="mdc-card__primary bg-white">
+                 
+                  <% if alert %>
+               
+               <div class="alert alert-success" role="alert">
+                 <h4 class="alert-heading"><%= alert %></h4>
+                 <p></p>
+                 <p class="mb-0"></p>
+               </div>
+                  <% else %>
+                    
+                  <% end %>
+
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              
+
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                    <label class="mdc-text-field w-100">
+                       
+                      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'mdc-text-field__input' %>
+                       
+                      <span class="mdc-text-field__label">Usuário ou e-mail</span>
+                      <div class="mdc-text-field__bottom-line"></div>
+                    </label>
+                  </div>
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                    <label class="mdc-text-field w-100">
+                        <%= f.password_field :password, autocomplete: "off", class: 'mdc-text-field__input' %>
+                       
+                      <span class="mdc-text-field__label">Senha:</span>
+                      <div class="mdc-text-field__bottom-line"></div>
+                    </label>
+                  </div>
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+
+              <% if devise_mapping.rememberable? -%>
+               
+                <%= f.check_box :remember_me, class: 'mdc-checkbox__native-control' %>
+                  
+                <% end -%>
+              
+                <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label for="my-checkbox">Lembrar me</label>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center justify-content-end">
+                      <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+                      <%= link_to "Esqueceu sua senha?", new_password_path(resource_name) %><br />
+                    <% end -%>
+                   
+                    
+                  </div>
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                      <%= f.submit "Fazer login", 'data-mdc-auto-init': 'MDCRipple', class: 'mdc-button mdc-button--raised w-100' %>
+                    
+                  </div>
+                </div>
+              </div>
+                
+								</section>
+							</div>
+						</div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+						</div>
+					</div>
+				</div>
+      </main>
+    </div>
+  </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+  <!-- body wrapper -->

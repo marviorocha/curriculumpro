@@ -38,17 +38,18 @@
           </div>
           <div class="mdc-menu-anchor mr-1">
             <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
-              <i class="material-icons">more_vert</i>
+               <%= image_tag(gravatar(current_user.email, 30)) %>
             </a>
             <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="logout-menu">
+           
                 <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
                   <li class="mdc-list-item" role="menuitem" tabindex="0">
                     <i class="material-icons mdc-theme--primary mr-1">settings</i>
                     Settings
                   </li>
                   <li class="mdc-list-item" role="menuitem" tabindex="0">
-                    <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
-                    Logout
+                    <%= link_to "<i class='material-icons mdc-theme--primary mr-1'>power_settings_new</i> Sair".html_safe , destroy_user_session_path , :method => 'delete' %>
+                                     
                   </li>
                 </ul>
             </div>
