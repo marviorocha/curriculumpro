@@ -1,6 +1,6 @@
 (function($) {
   'use strict';
-  $(function() {
+  $('turbolinks:load',function() {
     var body = $('body');
     var contentWrapper = $('.content-wrapper');
     var scroller = $('.container-scroller');

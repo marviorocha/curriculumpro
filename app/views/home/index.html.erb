@@ -1,7 +1,10 @@
  
   <!-- Required meta tags -->
- 
+  <% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
   <title>Material Admin</title>
+<% end %>
+  
  
  
   <div class="body-wrapper">
@@ -10,14 +13,14 @@
       <nav class="mdc-persistent-drawer__drawer">
         <div class="mdc-persistent-drawer__toolbar-spacer">
           <a href="<%= root_path %>" class="brand-logo">
-					<%= image_tag 'logo.svg', alt: "logo" %>
+					<%= image_tag 'logo.svg',  alt: "logo" %>
 					</a>
         </div>
         <div class="mdc-list-group">
           <nav class="mdc-list mdc-drawer-menu">
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="index.html">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+              <a  class="mdc-drawer-link" href="index.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon"  aria-hidden="true">desktop_mac</i>
                 Dashboard
               </a>
             </div>
@@ -121,7 +124,7 @@
     <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <a  href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
           <span class="mdc-toolbar__input">
             <div class="mdc-text-field">
               <input type="text" class="mdc-text-field__input" id="css-only-text-field-box" placeholder="Search anything...">
@@ -130,7 +133,7 @@
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
           <div class="mdc-menu-anchor">
-            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
+            <a  href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
               <i class="material-icons">notifications</i>
               <span class="dropdown-count">3</span>
             </a>
@@ -283,7 +286,7 @@
             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
               <div class="mdc-card card--with-avatar">
                 <section class="mdc-card__primary">
-                  <div class="card__avatar"><img src="images/faces/face1.jpg" alt=""></div>
+                  <div class="card__avatar"><%= image_tag('faces/face1') %></div>
                   <h1 class="mdc-card__title">Daniel Russel</h1>
                   <h2 class="mdc-card__subtitle">@danielrussel</h2>
                   <span class="social__icon-badge mdc-twitter mdi mdi-twitter"></span>
@@ -397,7 +400,7 @@
         </div>
       </main>
       <!-- partial:partials/_footer.html -->
-      <!-- <footer>
+      <footer>
         <div class="mdc-layout-grid">
           <div class="mdc-layout-grid__inner">
             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
@@ -408,7 +411,7 @@
             </div>
           </div>
         </div>
-      </footer> -->
+      </footer>
       <!-- partial -->
     </div>
   </div>

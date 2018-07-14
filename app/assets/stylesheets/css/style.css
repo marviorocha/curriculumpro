@@ -12,6 +12,7 @@
 /* === Import template variables === */
 @keyframes mdc-ripple-fg-radius-in {
   from {
+    
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(var(--mdc-ripple-fg-translate-start, 0)) scale(1); }
   to {
@@ -74,6 +75,7 @@
 /* TODO(sgomes): Figure out what to do about desktop font sizes. */
 /* TODO(sgomes): Figure out what to do about i18n and i18n font sizes. */
 .mdc-button {
+  
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1527,6 +1529,7 @@
   .mdc-dialog__action {
     /* @alternate */
     color: #e52d27;
+  
     color: var(--mdc-theme-secondary, #e52d27); }
   @media (max-width: 640px) {
     .mdc-dialog {
