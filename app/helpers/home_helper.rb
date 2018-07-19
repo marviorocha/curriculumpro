@@ -7,7 +7,7 @@ module HomeHelper
           tarde = Time.now.at_midday
           noite = Time.now.midnight
         
-          noite
+          tarde
            
           
      end
