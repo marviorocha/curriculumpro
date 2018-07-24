@@ -23,6 +23,9 @@
 # AdminTemplete Ignore
 /public/Material-Admin/*
 
+/app/assets/javascripts/js/node_modules/*
+
+
 /node_modules
 /yarn-error.log
 
