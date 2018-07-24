@@ -23,7 +23,7 @@
 # AdminTemplete Ignore
 /public/Material-Admin/*
 
-/app/assets/javascripts/js/node_modules/*
+/app/assets/javascripts/js/node_modules/.keep
 
 
 /node_modules
